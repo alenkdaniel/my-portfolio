@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c28836c5fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "QJeVzFMJS9SUNLY-Q",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- Head section -->
+    <header
+      class="flex items-center justify-between p-3 cursor-pointer bg-gray-100 sticky top-0"
+    >
+      <!-- Logo Section -->
+      <section class="w-">
+        <h1 class="text-blue-950 text-3xl font-bold">Portfolio</h1>
+      </section>
+      <!-- Navigation Section -->
+      <nav class="hidden md:flex items-center gap-12 text-lg">
+        <a href="#" class="text-blue-950 hover:text-blue-500">Home</a>
+        <a href="#about" class="text-blue-950 hover:text-blue-500">About</a>
+        <a href="#skills" class="text-blue-950 hover:text-blue-500">Skills</a>
+        <a href="#projects" class="text-blue-950 hover:text-blue-500"
+          >Project</a
+        >
+        <a href="#contacts" class="text-blue-950 hover:text-blue-500">Contact</a>
+      </nav>
+      <div class="md:hidden">
+        <i class="fa-solid fa-bars text-2xl text-blue-700"></i>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section class="p-4 flex flex-col md:flex-row h-auto md:h-[600px]">
+      <!-- Image Section -->
+      <section
+        class="w-full md:w-1/2 h-full flex justify-center items-center py-6"
+      >
+        <div
+          class="w-64 h-64 rounded-full overflow-hidden border-gray-300 hover:w-80 hover:h-80 transition-all duration-300 ease-in-out"
+        >
+          <img
+            src="images/Gemini_Generated_Image_xkkx4yxkkx4yxkkx.png"
+            alt=""
+            class="w-full h-full object-cover rounded-full"
+          />
+        </div>
+      </section>
+
+      <!-- Text Section -->
+      <section
+        class="w-full md:w-1/2 h-full flex flex-col justify-center gap-6 px-8"
+      >
+        <h2 class="text-4xl md:text-6xl font-bold">I'm Alen K Daniel</h2>
+        <h3 class="text-2xl md:text-4xl text-indigo-600">Frontend Developer</h3>
+        <p class="text-base md:text-lg text-gray-600 leading-relaxed">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minima
+          inventore expedita possimus sed cupiditate exercitationem fugit soluta
+          voluptatem earum, voluptatibus eius dolorem blanditiis. Minima earum
+          fuga iusto esse quidem.
+        </p>
+
+        <!-- Button + Icons Row -->
+        <div
+          class="flex flex-wrap items-center justify-center sm:justify-start gap-6"
+        >
+          <!-- Download Button -->
+          <button
+            class="w-full sm:w-[300px] h-[50px] rounded-3xl bg-blue-900 text-white font-bold hover:bg-blue-950 transition duration-300"
+          >
+            Download CV
+          </button>
+
+          <!-- Social Icons -->
+          <div class="flex items-center gap-4">
+            <a href="www.linkedin.com/in/alen-k-daniel-61bb83269"
+              ><img
+                src="images/linkedinblue.svg"
+                alt="LinkedIn"
+                class="w-8 h-8 sm:w-10 sm:h-10"
+            /></a>
+            
+            <a href="https://github.com/alenkdaniel">
+              <img
+              src="images/github-day.svg"
+              alt="GitHub"
+              class="w-8 h-8 sm:w-10 sm:h-10"
+            />
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- About Section -->
+    <section
+      class="py-8 px-6 md:px-14 flex flex-col items-center text-center justify-around gap-6 bg-gray-100"
+      id="about"
+    >
+      <h2 class="text-3xl md:text-5xl text-blue-950 font-bold">About Me</h2>
+      <p class="max-w-5xl text-sm md:text-lg text-gray-600 leading-relaxe">
+        Hello! I'm a passionate Front-End Developer focused on creating visually
+        appealing, responsive, and user-friendly web applications. I specialize
+        in HTML5, CSS, JavaScript, and Tailwind CSS, crafting clean, efficient,
+        and maintainable code to bring ideas to life. My goal is to build
+        intuitive user interfaces that not only look great but also function
+        seamlessly. I have a keen eye for detail and a deep understanding of
+        modern web development practices. I enjoy working on dynamic layouts,
+        interactive elements, and responsive designs to enhance user experiences
+        across different devices. I'm always eager to learn new tools,
+        frameworks, and technologies to stay ahead in the ever-evolving world of
+        web development. Whether developing from scratch or optimizing
+        performance, I approach every project with creativity, problem-solving
+        skills, and a commitment to delivering high-quality results. I'm excited
+        about building products that make a positive impact and continuously
+        growing as a developer. Let's create something amazing together!
+      </p>
+    </section>
+
+    <!-- Skills -->
+
+    <section
+      class="w-full h-auto md:w-full py-10 px-6 md:px-14 flex flex-col items-center text-center gap-6"
+      id="skills"
+    >
+      <h2 class="text-3xl md:text-5xl text-blue-950 font-bold">Skills</h2>
+      <!-- Skills Image -->
+      <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 w-full gap-8">
+        <!-- HTML Image -->
+        <div class="flex flex-col items-center">
+          <img
+            src="images/html5-day (1).svg"
+            alt=""
+            class="w-24 h-24 md:w-36 md:h-36 object-contain hover:scale-105 transition-all duration-300 ease-in-out"
+          />
+          <p class="font-bold mt-2">HTML 5</p>
+        </div>
+        <!-- CSS Image -->
+        <div class="flex flex-col items-center">
+          <img
+            src="images/css3.png"
+            alt=""
+            class="w-24 h-24 md:w-36 md:h-36 object-contain hover:scale-105 transition-all duration-300 ease-in-out"
+          />
+          <p class="font-bold mt-2">CSS</p>
+        </div>
+        <!-- Tailwind css Image -->
+        <div class="flex flex-col items-center">
+          <img
+            src="images/tailwindcss-mark.d52e9897.svg"
+            alt=""
+            class="w-24 h-24 md:w-36 md:h-36 object-contain hover:scale-105 transition-all duration-300 ease-in-out"
+          />
+          <p class="font-bold mt-2">Tailwind CSS</p>
+        </div>
+        <!-- Js Image -->
+        <div class="flex flex-col items-center">
+          <img
+            src="images/js-brands.svg"
+            alt=""
+            class="w-24 h-24 md:w-36 md:h-36 object-contain hover:scale-105 transition-all duration-300 ease-in-out"
+          />
+          <p class="font-bold mt-2">JavaScript</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section
+      class="flex flex-col items-center gap-12 py-9 px-6 md:px-14 bg-gray-100"
+      id="projects"
+    >
+      <h2 class="text-3xl md:text-5xl text-blue-950 font-bold text-center">
+        Projects
+      </h2>
+
+      <!-- Project Image Grid -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-6xl mx-auto"
+      >
+        <!-- Project Card -->
+        <div
+          class="w-full sm:w-[520px] h-auto mx-auto rounded-lg overflow-hidden shadow-md"
+        >
+          <img
+            src="images/Screenshot 2025-11-12 094332.png"
+            alt="Pepperfry"
+            class="w-full h-48 sm:h-56 object-cover hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+
+        <div
+          class="w-full sm:w-[520px] h-auto mx-auto rounded-lg overflow-hidden shadow-md"
+        >
+          <img
+            src="images/Screenshot 2025-11-12 094531.png"
+            alt="GoDaddy"
+            class="w-full h-48 sm:h-56 object-cover hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+
+        <div
+          class="w-full sm:w-[520px] h-auto mx-auto rounded-lg overflow-hidden shadow-md"
+        >
+          <img
+            src="images/Screenshot 2025-11-12 094749.png"
+            alt="Amazon"
+            class="w-full h-48 sm:h-56 object-cover hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+
+        <div
+          class="w-full sm:w-[520px] h-auto mx-auto rounded-lg overflow-hidden shadow-md"
+        >
+          <img
+            src="images/Screenshot 2025-11-12 094923.png"
+            alt="Cara"
+            class="w-full h-48 sm:h-56 object-cover hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacts" class="flex flex-col items-center gap-12 py-9 px-6 md:px-14">
+      <h2 class="text-3xl md:text-5xl text-blue-950 font-bold text-center">
+        Contact
+      </h2>
+      <form
+        action=""
+        class="w-full max-w-xl flex flex-col gap-6 p-6 rounded-lg justify-around"
+      >
+        <div class="flex flex-col">
+          <label for="name" class="text-sm font-semibold text-gray-700 mb-1"
+            >Name :
+          </label>
+          <input
+            type="text"
+            placeholder="Enter Your Name"
+            id="name"
+            class="w-full h-12 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+        <div class="flex flex-col">
+          <label for="email" class="text-sm font-semibold text-gray-700 mb-1"
+            >Email :
+          </label>
+          <input
+            type="email"
+            placeholder="Enter your email address"
+            id="email"
+            class="w-full px-4 py-3 resize-none border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+        <div class="flex flex-col">
+          <label for="message" class="text-sm font-semibold text-gray-700 mb-1"
+            >Message :
+          </label>
+          <textarea
+            name=""
+            id="message"
+            title="message"
+            cols="70"
+            rows="05"
+            class="w-full h-12 px-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          ></textarea>
+        </div>
+        <button
+          type="submit"
+          class="w-full py-3 bg-blue-800 text-white font-semibold rounded-md hover:bg-blue-900 transition-colors duration-300"
+          onclick="sendMail()"
+        >
+          Send Message
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <section
+      class="w-full py-4 px-6 bg-blue-950 flex items-center justify-center"
+    >
+      <p class="text-white text-center text-sm sm:text-base">
+        © 2025 Alen K Daniel. All rights reserved.
+      </p>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
