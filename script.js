@@ -1,3 +1,21 @@
+const menuIcon = document.getElementById("menu-icon");
+const mobileMenu = document.getElementById("mobile-menu");
+const closeIcon = document.getElementById("close-icon");
+
+// Toggle visibility
+const toggleMenu = (show) => {
+  mobileMenu.classList.toggle("hidden", !show);
+  menuIcon.classList.toggle("hidden", show);
+};
+
+menuIcon.addEventListener("click", () => toggleMenu(true));
+closeIcon.addEventListener("click", () => toggleMenu(false));
+
+// Auto-close on link click
+mobileMenu.querySelectorAll("a").forEach(link =>
+  link.addEventListener("click", () => toggleMenu(false))
+);
+
 function sendMail() {
   var params = {
     name: document.getElementById("name").value,
